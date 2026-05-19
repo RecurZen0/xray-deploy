@@ -4,7 +4,7 @@ REPO_URL="https://raw.githubusercontent.com/RecurZen0/xray-deploy/refs/heads/mai
 XRAY_CONF="/usr/local/etc/xray/config.json"
 
 echo "========== [1/4] BBR optimizing =========="
-yum install -y curl wget unzip
+apt install -y curl wget unzip
 curl -sL ${REPO_URL}/scripts/sys_optimize.sh | bash
 
 echo "========== [2/4] Installing Xray Core =========="
