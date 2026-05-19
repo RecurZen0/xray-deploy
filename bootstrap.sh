@@ -26,6 +26,7 @@ sed -i "s/YOUR_SHORT_ID_HERE/$SHORT_ID/g" $XRAY_CONF
 echo "========== [4/4] Start Service =========="
 systemctl enable xray
 systemctl restart xray
+systemctl status xray
 
 # 打印客户端配置信息
 SERVER_IP=$(curl -s ifconfig.me)
