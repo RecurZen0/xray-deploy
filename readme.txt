@@ -1,1 +1,1 @@
-bash <(curl -sL https://raw.githubusercontent.com/RecurZen0/xray-reality-project/main/bootstrap.sh)
+bash <(curl -sL https://raw.githubusercontent.com/RecurZen0/xray-deploy/refs/heads/main/bootstrap.sh)
