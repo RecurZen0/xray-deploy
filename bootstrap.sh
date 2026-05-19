@@ -1,6 +1,6 @@
 #!/bin/bash
 # 环境变量与路径
-REPO_URL="https://raw.githubusercontent.com/RecurZen0/xray-deploy/refs/heads/mainn"
+REPO_URL="https://raw.githubusercontent.com/RecurZen0/xray-deploy/refs/heads/main"
 XRAY_CONF="/usr/local/etc/xray/config.json"
 
 echo "========== [1/4] BBR optimizing =========="
