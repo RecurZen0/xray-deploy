@@ -14,7 +14,7 @@ echo "========== [3/4] Generating Keys =========="
 UUID=$(cat /proc/sys/kernel/random/uuid)
 KEYS=$(/usr/local/bin/xray x25519)
 PRIV_KEY=$(echo "$KEYS" | grep "Privatekey" | awk '{print $2}')
-PUB_KEY=$(echo "$KEYS" | grep "Password" | awk '{print $2}')
+PUB_KEY=$(echo "$KEYS" | grep "Password" | awk '{print $3}')
 SHORT_ID=$(openssl rand -hex 4)
 
 # 拉取模板并替换密钥
